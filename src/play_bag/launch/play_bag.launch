@@ -1,0 +1,9 @@
+<launch>
+    <!-- no obstacles -->
+    <arg name="bagfile" default="2024-04-01-20-24-32.bag" />
+
+    <!-- Drilling ring -->
+    <!-- <arg name="bagfile" default="2024-04-01-21-13-36.bag" /> -->
+
+    <node pkg="rosbag" type="play" name="rosbag" args="/home/ranfr/Documents/Rosbag/$(arg bagfile)" output="screen" />
+</launch>

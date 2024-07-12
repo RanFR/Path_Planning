@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="path_planning" type="path_planning" name="path_planning" output="screen">
+        <param name="pc2_topic" value="/cloud_registered" type="string"/>
+        <param name="odom_topic" value="/odom" type="string"/>
+    </node>
+
+    <node pkg="rosbag" type="play" name="player" output="screen" args="--clock /home/ranfr/test.bag"/>
+</launch>
